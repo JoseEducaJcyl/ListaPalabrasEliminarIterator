@@ -4,12 +4,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        //Declaramos una ArrayList para Strings "palabras"
         List<String> palabras = new ArrayList<String>();
+        //Añadimos palabras
         palabras.add("Arbol");
         palabras.add("Carrera");
         palabras.add("Macarrones");
         palabras.add("Telefono");
         palabras.add("CPU");
+        //Con un iterator, recorremos la lista, si la palabra contiene la letra
+        //"A" se quita de la lista 
         Iterator<String> iterador = palabras.iterator();
         while (iterador.hasNext()) {
             String palabra = iterador.next();
